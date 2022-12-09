@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    web:
+        build: apache
+        ports:
+            - 80:80
+            - 443:433
+        volumes:
+            - ./starwars:/app/starwars
+            - ./startrek:/app/startrek
+            - ./apache/starwars.conf:/etc/apache2/sites-enabled/starwars.conf
+            - ./apache/startrek.conf:/etc/apache2/sites-enabled/startrek.conf
