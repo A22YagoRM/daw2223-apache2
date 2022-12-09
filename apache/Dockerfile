@@ -9,4 +9,4 @@ EXPOSE 443
 
 WORKDIR /app
 
-CMD apachectl -D foreground
+CMD apachectl -D FOREGROUND
