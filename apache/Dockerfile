@@ -3,6 +3,7 @@ FROM debian
 RUN apt update && apt install -y apache2 php libapache2-mod-php
 
 RUN a2enmod ssl
+RUN a2enmod rewrite
 
 EXPOSE 80
 EXPOSE 443
